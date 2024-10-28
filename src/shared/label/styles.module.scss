@@ -1,0 +1,6 @@
+@import '@styles/variables';
+
+.required_star {
+  color: $indicator-error;
+  font-weight: $weight-semibold;
+}

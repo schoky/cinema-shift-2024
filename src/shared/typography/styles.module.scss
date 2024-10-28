@@ -1,0 +1,52 @@
+@import '@styles/variables';
+
+.h1 {
+  font-size: $size-h1;
+  font-weight: $weight-bold;
+}
+
+.h2 {
+  font-size: $size-h2;
+  font-weight: $weight-bold;
+}
+
+.h3 {
+  font-size: $size-h3;
+  font-weight: $weight-semibold;
+}
+
+.p_12_regular {
+  font-size: $size-xs;
+  font-weight: $weight-regular;
+}
+
+.p_14_regular {
+  font-size: $size-sm;
+  font-weight: $weight-regular;
+}
+
+.p_16_regular {
+  font-size: $size-md;
+  font-weight: $weight-regular;
+}
+
+.p_16_medium {
+  font-size: $size-md;
+  font-weight: $weight-medium;
+}
+
+.primary {
+  color: $text-primary;
+}
+
+.secondary {
+  color: $text-secondary;
+}
+
+.tertiary {
+  color: $text-tertiary;
+}
+
+.invert {
+  color: $text-invert;
+}

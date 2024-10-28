@@ -1,0 +1,97 @@
+@import '@styles/variables';
+
+.button {
+  width: max-content;
+  padding: $btn-paddings;
+  border-radius: $btn-radius;
+  transition: all $transition-time ease-out;
+  cursor: pointer;
+  font-size: $size-md;
+  font-weight: $weight-semibold;
+
+  &:disabled {
+    cursor: auto;
+  }
+}
+
+.contained {
+  background-color: $bg-brand;
+  color: $text-invert;
+
+  &:hover {
+    background-color: $bg-hover-primary;
+  }
+
+  &:disabled {
+    background-color: $bg-brand-extra-light;
+  }
+}
+
+.outlined {
+  border: 1px solid $bg-brand;
+  color: $text-primary;
+
+  &:hover {
+    background-color: $bg-tertiary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.text {
+  border: none;
+  color: $text-brand;
+
+  &:hover {
+    background-color: $bg-tertiary;
+  }
+}
+
+.link {
+  border: none;
+  color: $text-brand;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover {
+    color: $bg-hover-primary;
+  }
+}
+
+.full_width {
+  width: 100%;
+}
+
+.loading {
+  position: relative;
+
+  & span {
+    color: transparent;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border-top: 2px solid $border-light;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    width: 24px;
+    height: 24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinner 1s linear infinite;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

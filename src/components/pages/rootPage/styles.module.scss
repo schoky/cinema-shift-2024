@@ -1,0 +1,18 @@
+@import '@styles/mixins';
+
+.cards_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 32px;
+  margin-top: 16px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
+}

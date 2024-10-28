@@ -1,0 +1,44 @@
+@import '@styles/variables';
+
+.card {
+  border-radius: 16px;
+  border: 1px solid $border-extra-light;
+  padding: 16px;
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chips_green {
+  color: $indicator-positive;
+  background-color: #ecf9f2;
+}
+
+.chips_red {
+  color: $indicator-error;
+  background-color: #f9ecec;
+}
+
+.button {
+  border-color: $border-light;
+}
